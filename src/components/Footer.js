@@ -159,14 +159,14 @@ export function Footer() {
                     <p className="text-[12px] text-[#808080] font-[400]">
                       Have a question?
                     </p>
-                    <a
+                    <button
                       className="text-[1vw] text-[#fff] font-[400] cursor-pointer font-size"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => handlePhoneClick("+420 608 063 874")}
                     >
                       +420 608 063 874
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <div className="flex flex-row gap-[12px] footer-contact-icons">
@@ -177,14 +177,14 @@ export function Footer() {
                     <p className="text-[12px] text-[#808080] font-[400]">
                       Contact us at
                     </p>
-                    <a
+                    <button
                       className="text-[1vw] text-[#fff] font-[400] cursor-pointer font-size"
                       onClick={() => handleEmailClick("unreal@outlook.com")}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       unreal@outlook.com
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <div className="flex flex-row gap-[12px] footer-contact-icons">
@@ -225,15 +225,18 @@ export function Footer() {
               className="flex flex-row gap-[32px] footer-last-gap"
               onClick={handleRulesClick}
             >
-              <p className="text-[#808080] text-[12px] font-[400] footer-p">
-                <Link to="/ourrules">Our rules</Link>
-              </p>
-            </div>
-            <div className="flex flex-row gap-[32px] footer-last-gap">
-              <p
+              <Link
+                to="/ourrules"
                 className="text-[#808080] text-[12px] font-[400] footer-p"
-                onClick={handleRulesClick}
               >
+                Our rules
+              </Link>
+            </div>
+            <div
+              className="flex flex-row gap-[32px] footer-last-gap"
+              onClick={handleRulesClick}
+            >
+              <p className="text-[#808080] text-[12px] font-[400] footer-p">
                 <Link to="/privacypolicy">Privacy Policy</Link>
               </p>
               <p

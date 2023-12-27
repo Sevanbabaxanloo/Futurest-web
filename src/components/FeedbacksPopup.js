@@ -23,6 +23,12 @@ const FeedbacksPupup = ({ open, onClose }) => {
     }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setMessageVisible(true);
+  };
+
   useEffect(() => {
     const handleEsc = (event) => {
       if (event.key === "Escape") {
