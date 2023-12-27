@@ -131,7 +131,7 @@ const ExploreApp = () => {
                     >
                       <img
                         src={image}
-                        alt={`Section ${section.id} Image ${index + 1}`}
+                        alt="/"
                         className={`relative z-[-1] animate-img explore-img element-${
                           index + 1
                         }`}
@@ -156,7 +156,7 @@ const ExploreApp = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={AppleImg} alt="" />
+                  <img src={AppleImg} alt="/" />
                   <p className="text-[16px] font-[600] text-[#fff] explore-p-text explore-button-p">
                     App Store
                   </p>
@@ -169,7 +169,7 @@ const ExploreApp = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={GoogleImg} alt="" />
+                  <img src={GoogleImg} alt="/" />
                   <p className="text-[16px] font-[600] text-[#fff] h-[22px] explore-p-text explore-button-p">
                     Play Market
                   </p>

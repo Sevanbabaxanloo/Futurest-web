@@ -102,6 +102,7 @@ const HeaderMenu = ({ onCloseMenu }) => {
               <a
                 href="https://futurest.onelink.me/Awth/landing1"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={AppleImg} alt="/" />
               </a>
@@ -110,6 +111,7 @@ const HeaderMenu = ({ onCloseMenu }) => {
               <a
                 href="https://play.google.com/store/apps/details?id=com.futurest&hl=en&gl=US"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={GoogleImg} alt="/" />
               </a>

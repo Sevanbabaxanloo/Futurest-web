@@ -86,6 +86,7 @@ export function Footer() {
                     <a
                       href="https://apps.apple.com/cz/app/futurest-new-friends-events/id1564082295"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img src={Apple} alt="/" />
                     </a>
@@ -94,6 +95,7 @@ export function Footer() {
                     <a
                       href="https://play.google.com/store/apps/details?id=com.futurest&hl=en&gl=US"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img src={Google} alt="/" />
                     </a>
@@ -160,6 +162,7 @@ export function Footer() {
                     <a
                       className="text-[1vw] text-[#fff] font-[400] cursor-pointer font-size"
                       target="_blank"
+                      rel="noopener noreferrer"
                       onClick={() => handlePhoneClick("+420 608 063 874")}
                     >
                       +420 608 063 874
@@ -177,6 +180,7 @@ export function Footer() {
                     <a
                       className="text-[1vw] text-[#fff] font-[400] cursor-pointer font-size"
                       onClick={() => handleEmailClick("unreal@outlook.com")}
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
                       unreal@outlook.com
@@ -195,6 +199,7 @@ export function Footer() {
                       href="https://www.google.com/maps/place/Italsk%C3%A1+2581%2F67,+120+00+Vinohrady/data=!4m2!3m1!1s0x470b94972be9dc7f:0x672a6e2930474ef6?sa=X&ved=2ahUKEwj7q5SOotH6AhUNwAIHHWajDlkQ8gF6BAgeEAE"
                       className="text-[1vw] text-[#fff] font-[400] cursor-pointer font-size"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Italská 2581/67, 120 00 Vinohrady, Praha
                     </a>

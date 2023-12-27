@@ -14,8 +14,6 @@ const EventCreatorsPopup = ({ open, onClose }) => {
     message: "",
   });
 
-  const [isMessageVisible, setMessageVisible] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -44,7 +42,7 @@ const EventCreatorsPopup = ({ open, onClose }) => {
   return (
     <div
       onClick={onClose}
-      className="h-screen w-full flex justify-center items-center fixed top-0 left-0 z-50 bg-[#000] bg-opacity-60"
+      className="h-screen w-full flex justify-center items-center fixed top-0 left-0 z-[90] bg-[#000] bg-opacity-60"
     >
       <form>
         <div
@@ -146,7 +144,6 @@ const EventCreatorsPopup = ({ open, onClose }) => {
               >
                 Request
               </button>
-              <div>{isMessageVisible ? <Result /> : null}</div>
             </div>
           </div>
         </div>

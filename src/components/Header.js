@@ -98,6 +98,7 @@ const Header = ({ hide }) => {
                 href="https://apps.apple.com/cz/app/futurest-new-friends-events/id1564082295"
                 className="h-7 w-7 flex items-center justify-center"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={AppleImg} alt="/" className="w-5 h-5 menu-shop-img" />
               </a>
@@ -107,6 +108,7 @@ const Header = ({ hide }) => {
                 href="https://play.google.com/store/apps/details?id=com.futurest&hl=en&gl=US"
                 className="h-7 w-7 flex items-center justify-center"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src={GoogleImg}
