@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState } from "react";
 import Popup from "./EventCreatorsPopup";
 import Dawn from "../assets/dawn.svg";
 
 const EventCreators = () => {
+
   const [oppenPopup, setOppenPopup] = useState(false);
 
 

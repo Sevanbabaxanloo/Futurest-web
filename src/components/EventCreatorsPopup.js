@@ -24,8 +24,6 @@ const EventCreatorsPopup = ({ open, onClose }) => {
     }));
   };
 
-  const isFormEmpty = Object.values(formData).every((value) => value === "");
-
   useEffect(() => {
     const handleEsc = (event) => {
       if (event.key === "Escape") {

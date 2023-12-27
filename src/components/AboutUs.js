@@ -40,6 +40,7 @@ function AboutUs() {
                   <a
                     href="https://www.linkedin.com/company/futurest-group/about/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={MdiLinkedin} alt="/" />
                   </a>
@@ -48,6 +49,7 @@ function AboutUs() {
                   <a
                     href="https://www.instagram.com/futurest.cz/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={RiInstagramFill} alt="/" />
                   </a>

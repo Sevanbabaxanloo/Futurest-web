@@ -114,6 +114,7 @@ function Contact() {
           <button
             type="submit"
             className="text-[16px] text-[var(--button-text-orange)] font-[600] border-[1px] border-[var(--button-text-orange)] px-[24px] py-[16px] rounded-[8px]"
+            disabled={isFormEmpty}
           >
             Request
           </button>

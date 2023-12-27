@@ -38,7 +38,7 @@ const Header = ({ hide }) => {
 
   return (
     <div
-      className={`w-full h-[110px] flex menu-padding-header height-container py-[32px] px-[60px] fixed z-[90] ${
+      className={`w-full h-[80px] flex menu-padding-header height-container pt-[32px] px-[60px] fixed z-[80] ${
         hide ? "hidden-menu" : ""
       }`}
       id="Header"
@@ -136,4 +136,3 @@ const Header = ({ hide }) => {
 };
 
 export default Header;
-

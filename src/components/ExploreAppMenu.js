@@ -13,40 +13,42 @@ const ExploreAppMenu = ({ activeLink, handleClick, screenWidth }) => {
     { text: "UPCOMING" },
   ];
 
-  const animations = [
-    "animate-events",
-    "animate-create-event",
-    "animate-chat",
-    "animate-meet-people",
-    "animate-ai-enabled",
-    "animate-upcoming",
-  ];
-
   useEffect(() => {
+    const animations = [
+      "animate-events",
+      "animate-create-event",
+      "animate-chat",
+      "animate-meet-people",
+      "animate-ai-enabled",
+      "animate-upcoming",
+    ];
+
     const animationClass = animations[activeLink];
 
     const element = document.getElementById("animation-target");
     const images = document.querySelectorAll(".animate-img");
 
-    element.className = animationClass;
-    images.forEach((img) => {
-      img.classList.add(animationClass);
-      img.classList.remove("animate-img");
-    });
-
-    const animationDuration = 1000;
-    setTimeout(() => {
-      element.className = "";
+    if (element && images) {
+      element.className = animationClass;
       images.forEach((img) => {
-        img.classList.remove(animationClass);
-        img.classList.add("animate-img");
+        img.classList.add(animationClass);
+        img.classList.remove("animate-img");
       });
-    }, animationDuration);
+
+      const animationDuration = 1000;
+      setTimeout(() => {
+        element.className = "";
+        images.forEach((img) => {
+          img.classList.remove(animationClass);
+          img.classList.add("animate-img");
+        });
+      }, animationDuration);
+    }
   }, [activeLink]);
 
   let startIdx, endIdx;
 
-  if (window.innerWidth >= 768) {
+  if (screenWidth >= 768) {
     startIdx = activeLink === 0 ? links.length - 1 : activeLink - 1;
     endIdx = activeLink === links.length - 1 ? 0 : activeLink + 1;
   } else {
@@ -59,7 +61,7 @@ const ExploreAppMenu = ({ activeLink, handleClick, screenWidth }) => {
       <div className="w-full h-auto top-[0px] z-0 menu-padding overflow-hidden absolute">
         <div className="flex justify-center items-center">
           <ul className="flex flex-row justify-center gap-[3.33vw] width events-gap">
-            {window.innerWidth >= 768
+            {screenWidth >= 768
               ? links.map((link, index) => (
                   <ExploreAppMenuItems
                     key={index}

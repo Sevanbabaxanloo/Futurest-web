@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import AppMenu from "./ExploreAppMenu";
 import AppleImg from "../assets/apple.svg";
 import GoogleImg from "../assets/google-play.svg";
@@ -154,6 +154,7 @@ const ExploreApp = () => {
                   href="https://futurest.onelink.me/Awth/landing1"
                   className="w-[156px] h-[56px] px-[24px] py-[16px] flex flex-row justify-between items-center bg-[var(--header-menu-color)] rounded-[8px] border-[1px] border-[var(--border-color)] explore-button"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={AppleImg} alt="" />
                   <p className="text-[16px] font-[600] text-[#fff] explore-p-text explore-button-p">
@@ -166,6 +167,7 @@ const ExploreApp = () => {
                   href="https://play.google.com/store/apps/details?id=com.futurest&hl=en&gl=US"
                   className="w-[172px] h-[56px] px-[24px] py-[16px] flex flex-row justify-between items-center bg-[var(--header-menu-color)] rounded-[8px] border-[1px] border-[var(--border-color)] explore-button"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={GoogleImg} alt="" />
                   <p className="text-[16px] font-[600] text-[#fff] h-[22px] explore-p-text explore-button-p">

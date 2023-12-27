@@ -23,8 +23,18 @@ const FeedbacksPupup = ({ open, onClose }) => {
     }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const isFormEmpty = Object.values(formData).every((value) => value === "");
+    setMessageVisible(true);
+
+    setFormData({
+      name: "",
+      nickname: "",
+      email: "",
+      message: "",
+    });
+  };
 
   useEffect(() => {
     const handleEsc = (event) => {
@@ -43,10 +53,11 @@ const FeedbacksPupup = ({ open, onClose }) => {
   }, [open, onClose]);
 
   if (!open) return null;
+
   return (
     <div
       onClick={onClose}
-      className="h-screen w-full flex justify-center items-center fixed top-0 left-0 z-50 bg-[#000] bg-opacity-60"
+      className="h-screen w-full flex justify-center items-center fixed top-0 left-0 z-[90] bg-[#000] bg-opacity-60"
     >
       <form>
         <div
