@@ -13,8 +13,6 @@ const FeedbacksPupup = ({ open, onClose }) => {
     message: "",
   });
 
-  const [isMessageVisible, setMessageVisible] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -134,7 +132,6 @@ const FeedbacksPupup = ({ open, onClose }) => {
               >
                 Request
               </button>
-              <div>{isMessageVisible ? <Result /> : null}</div>
             </div>
           </div>
         </div>

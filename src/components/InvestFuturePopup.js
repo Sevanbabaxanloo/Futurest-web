@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import ClosingBtn from "../assets/closing-button.svg";
 
 const InvestFuturePopup = ({ open, onClose }) => {
-  const Result = () => {
-    return <p className="submit-button-text">Your message has been sent</p>;
-  };
-
   const [formData, setFormData] = useState({
     name: "",
     position: "",
