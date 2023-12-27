@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FiMinus, FiPlus } from "react-icons/fi";
 
 const QuestionElement = ({ index, open, toggle, question, Answer }) => {

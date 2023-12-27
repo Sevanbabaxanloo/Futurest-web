@@ -13,8 +13,6 @@ const InvestFuturePopup = ({ open, onClose }) => {
     email: "",
   });
 
-  const [isMessageVisible, setMessageVisible] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -22,8 +20,6 @@ const InvestFuturePopup = ({ open, onClose }) => {
       [name]: value,
     }));
   };
-
-  const isFormEmpty = Object.values(formData).every((value) => value === "");
 
   useEffect(() => {
     const handleEsc = (event) => {
@@ -136,7 +132,6 @@ const InvestFuturePopup = ({ open, onClose }) => {
               >
                 Request
               </button>
-              <div>{isMessageVisible ? <Result /> : null}</div>
             </div>
           </div>
         </div>
