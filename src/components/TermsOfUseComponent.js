@@ -285,7 +285,7 @@ const TermsOfUse = () => {
   return (
     <div className="container-p">
       <div>
-        <div className="flex flex-col gap-[40px] px-[7vw] py-[40px] rules-text-container pt-[70px]">
+        <div className="flex flex-col gap-[40px] px-[7vw] py-[40px] rules-text-container pt-[80px]">
           <h1 className="text-[6.111vw] text-[var(--button-text-orange)] font-[900] rules-h1">
             Terms of Use
           </h1>

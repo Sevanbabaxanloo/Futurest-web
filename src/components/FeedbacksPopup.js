@@ -47,7 +47,7 @@ const FeedbacksPupup = ({ open, onClose }) => {
         >
           <div className="w-[522px] h-[710px] my-[50px] popup-padding">
             <div className="flex justify-end popup-closing-height">
-              <div className="w-[32px] h-[32px] mr-[32px] mt-[32px] popup-closing popup-close-btn absolute top-0 right-0">
+              <div className="w-[32px] h-[32px] popup-closing popup-close-btn absolute top-[32px] right-[32px]">
                 <img src={ClosingBtn} alt="/" onClick={onClose} />
               </div>
             </div>

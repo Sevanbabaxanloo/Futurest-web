@@ -38,7 +38,7 @@ const Header = ({ hide }) => {
 
   return (
     <div
-      className={`w-full h-[80px] flex menu-padding-header height-container pt-[32px] px-[60px] fixed z-[80] ${
+      className={`w-full h-[90px] flex menu-padding-header height-container py-[32px] px-[60px] fixed z-[80] bg-[#1c1c1c] ${
         hide ? "hidden-menu" : ""
       }`}
       id="Header"
@@ -57,7 +57,7 @@ const Header = ({ hide }) => {
         </div>
         {!isSpecialPage && (
           <div className="flex header">
-            <ul className="flex flex-row space-x-1 md:space-x-3 lg:space-x-6 xl:space-x-8 2xl:space-x-12 bg-[var(--header-menu-color)] border-[1px] border-[var(--border-color)] px-[24px] py-[12px] rounded-[32px]">
+            <ul className="flex flex-row space-x-1 md:space-x-3 lg:space-x-6 xl:space-x-8 2xl:space-x-12 bg-[var(--header-menu-color)] border-[1px] border-[var(--border-color)] px-[24px] py-[12px] rounded-[32px] md:px-[16px]">
               <li className="flex items-center text-white font-bold cursor-pointer text-base sm:text-xs md:text-xs lg:text-base xl:text-base 2xl:text-base">
                 <Link to="/" onClick={() => scrollToSection("ExploreApp")}>
                   Explore the App
