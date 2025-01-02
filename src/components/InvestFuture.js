@@ -68,7 +68,7 @@ export function InvestFuture() {
 
   return (
     <div className="flex justify-center">
-      <div className="w-[1140px] relative p-[24px]" id="InvestFuture">
+      <div className="relative p-[24px]" id="InvestFuture">
         <div className="w-full flex justify-center">
           <div className="w-full">
             <img src={sunbstractTop2} alt="/" className="w-full" />
