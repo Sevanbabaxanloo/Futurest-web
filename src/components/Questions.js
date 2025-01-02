@@ -89,49 +89,51 @@ const Questions = () => {
       className="pl-[24px] pr-[24px] mb-[120px] questions-margin"
       id="Questions"
     >
-      <div className="relative w-full  flex flex-col justify-center">
-        <div className="flex justify-center">
-          <img src={SubtractTop} alt="/" className="w-full h-auto" />
-        </div>
-        <div className="w-full h-auto flex justify-center questions-h1-padding">
-          <h1 className="text-[48px] font-[700] text-center text-[#FFF] mb-[32px] w-full questions-h1 ">
-            Frequently asked questions
-          </h1>
-        </div>
-        <div className="w-full h-auto flex justify-center mb-[32px] px-[260px] questionElement-padding">
-          <div className="w-full ">
-            {QA.map((data, index) => {
-              return (
-                <QuestionElement
-                  key={index}
-                  index={index}
-                  open={index === openIndex}
-                  question={data.question}
-                  Answer={data.Answer}
-                  toggle={toggle}
-                />
-              );
-            })}
+      <div className="flex justify-center">
+        <div className="relative w-[1140px] flex flex-col justify-center">
+          <div className="flex justify-center">
+            <img src={SubtractTop} alt="/" className="w-full h-auto" />
+          </div>
+          <div className="w-full h-auto flex justify-center questions-h1-padding">
+            <h1 className="text-[48px] font-[700] text-center text-[#FFF] mb-[32px] w-full questions-h1 ">
+              Frequently asked questions
+            </h1>
+          </div>
+          <div className="w-full h-auto flex justify-center mb-[32px] px-[260px] questionElement-padding">
+            <div className="w-full ">
+              {QA.map((data, index) => {
+                return (
+                  <QuestionElement
+                    key={index}
+                    index={index}
+                    open={index === openIndex}
+                    question={data.question}
+                    Answer={data.Answer}
+                    toggle={toggle}
+                  />
+                );
+              })}
+            </div>
+          </div>
+          <div className="text-center ">
+            <p className="mt-[10px] mb-[24px] text-[#C5C5C5] text-[20px] font-[600] questions-p">
+              Didn't find the answer to your question? Feel free to
+            </p>
+            <button
+              className="py-[16px] px-[24px] bg-[var(--button-text-orange)] rounded-[8px] text-[#fff] text-[16px] font-[600] mb-[33px] relative questions-button-padding"
+              onClick={() => scrollToSection("ContactUs")}
+            >
+              Contact us
+            </button>
+          </div>
+          <div className="relative w-full flex  justify-center">
+            <img
+              src={Subtractbottom}
+              alt="/"
+              className="absolute w-full h-auto bottom-[-18px]"
+            />
           </div>
         </div>
-        <div className="text-center ">
-          <p className="mt-[10px] mb-[24px] text-[#C5C5C5] text-[20px] font-[600] questions-p">
-            Didn't find the answer to your question? Feel free to
-          </p>
-          <button
-            className="py-[16px] px-[24px] bg-[var(--button-text-orange)] rounded-[8px] text-[#fff] text-[16px] font-[600] mb-[33px] relative questions-button-padding"
-            onClick={() => scrollToSection("ContactUs")}
-          >
-            Contact us
-          </button>
-        </div>
-      </div>
-      <div className="relative w-full flex  justify-center">
-        <img
-          src={Subtractbottom}
-          alt="/"
-          className="absolute w-full h-auto bottom-[-18px]"
-        />
       </div>
     </div>
   );

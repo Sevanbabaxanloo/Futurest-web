@@ -37,6 +37,16 @@ function App() {
       <Team />
       <Contact />
       <Footer />
+      <div>
+        <a
+          href="https://dazzling-caramel-70f064.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-[24px] text-[#fff] font-black fixed bottom-[10px] right-[10px] text-center p-[10px] z-50 rounded-[10px] bg-[var(--button-text-orange)]"
+        >
+          New Version
+        </a>
+      </div>
     </div>
   );
 }

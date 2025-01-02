@@ -67,56 +67,58 @@ export function InvestFuture() {
   });
 
   return (
-    <div className="w-[100%] relative p-[24px]" id="InvestFuture">
-      <div className="w-full flex justify-center">
-        <div className="w-full">
-          <img src={sunbstractTop2} alt="/" className="w-full" />
+    <div className="flex justify-center">
+      <div className="w-[1140px] relative p-[24px]" id="InvestFuture">
+        <div className="w-full flex justify-center">
+          <div className="w-full">
+            <img src={sunbstractTop2} alt="/" className="w-full" />
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center">
-        <div className="flex flex-col items-center w-full gap-[24px]">
-          <img src={logo} alt="" className="w-[160px] h-[28px]" />
-          <h1 className="text-[48px] text-[#fff] font-[700] invest-h1">
-            Invest in Future
-          </h1>
+        <div className="flex justify-center">
+          <div className="flex flex-col items-center w-full gap-[24px]">
+            <img src={logo} alt="" className="w-[160px] h-[28px]" />
+            <h1 className="text-[48px] text-[#fff] font-[700] invest-h1">
+              Invest in Future
+            </h1>
+          </div>
         </div>
-      </div>
-      <div className="w-full flex align-center justify-center">
-        <div className="grid grid-cols-4 grid-rows-2 gap-[24px] invest-grid">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="flex justify-between items-baseline w-[20.833vw] invest-box-size invest-element"
-            >
-              <div className="w-[2px] h-[16px] border-[2px] border-[#fff] border-opacity-[0.24] invest-small-line parent-element"></div>
-              <div className="w-full my-[24px] flex flex-col justify-center items-center flex-wrap gap-[25px] invest-flex">
-                <div className="flex justify-center w-[260px] invest-img">
-                  <img src={item.image} alt="/" />
-                </div>
-                <div className="flex flex-col items-center">
-                  <p className="text-[#fff] text-[1.111vw] font-[500] w-auto text-center invest-font-siz">
-                    {item.text}
-                  </p>
+        <div className="w-full flex align-center justify-center">
+          <div className="grid grid-cols-4 grid-rows-2 gap-[24px] invest-grid">
+            {items.map((item) => (
+              <div
+                key={item.id}
+                className="flex justify-between items-baseline w-[20.833vw] invest-box-size invest-element"
+              >
+                <div className="w-[2px] h-[16px] border-[2px] border-[#fff] border-opacity-[0.24] invest-small-line parent-element"></div>
+                <div className="w-full my-[24px] flex flex-col justify-center items-center flex-wrap gap-[25px] invest-flex">
+                  <div className="flex justify-center w-[260px] invest-img">
+                    <img src={item.image} alt="/" />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <p className="text-[#fff] text-[1.111vw] font-[500] w-auto text-center invest-font-siz">
+                      {item.text}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="w-full h-auto flex justify-center">
-        <div className="w-full flex justify-center">
-          <button
-            className="text-[#fff] text-[16px] font-[600] bg-[var(--button-text-orange)] rounded-[8px] py-[16px] px-[24px] absolute bottom-[73px] button-bottom"
-            onClick={() => setOppenPopup(true)}
-          >
-            Request info
-          </button>
-          <Popup open={oppenPopup} onClose={() => setOppenPopup(false)} />
+        <div className="w-full h-auto flex justify-center">
+          <div className="w-full flex justify-center">
+            <button
+              className="text-[#fff] text-[16px] font-[600] bg-[var(--button-text-orange)] rounded-[8px] py-[16px] px-[24px] absolute bottom-[73px] button-bottom"
+              onClick={() => setOppenPopup(true)}
+            >
+              Request info
+            </button>
+            <Popup open={oppenPopup} onClose={() => setOppenPopup(false)} />
+          </div>
         </div>
-      </div>
-      <div className="w-full h-auto flex justify-center">
-        <div className="w-full mt-[5rem]">
-          <img src={sunbstractbuttom2} alt="/" className="w-full" />
+        <div className="w-full h-auto flex justify-center">
+          <div className="w-full mt-[5rem]">
+            <img src={sunbstractbuttom2} alt="/" className="w-full" />
+          </div>
         </div>
       </div>
     </div>
